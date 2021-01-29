@@ -1,0 +1,139 @@
+/*헤드*/
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.head {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.titlebar{
+    display: inline;
+}
+.logo{
+    width: 128px;
+    height: 130px;
+    
+}
+.typelogo{
+    width: 270px;
+    height: 94px;
+   
+}
+
+
+/*구분선*/
+
+.divideLine {
+    border: #000000 2px solid;
+    width: 600vh;
+    left: 0px;
+    top : 169px;
+    
+}
+.divideLine2 {
+    border: #000000 1px solid;
+    width: 80%;
+}
+
+
+/*바디
+클래스를 그냥 Body로 선언함. 시맨틱 태그 body랑은 다른거임
+*/
+.content{
+    flex : 5;
+    display: flex;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    height:  45px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+button :focus{
+    border: #aaaaaa solid 2px;
+    background-color: black;
+    color: white;
+}
+.button1{
+    /* display: absolute; */
+    left : 885px;
+    top: 204px;
+    width: 127px;
+    font-size: 20px;
+    color: #000000;
+    background-color: #fff;
+    border: #000 2px solid ;
+    border-radius: 10px;
+}
+.button1:hover {
+    
+    border: #aaaaaa solid 2px;
+    background-color: black;
+    color: white;
+}
+
+.button2{
+    /* display: absolute; */
+    width: 127px;
+    font-size: 20px;
+    color: #000000;
+    background-color: #fff;
+    border: #000 2px solid ;
+    border-radius: 10px;
+}
+.button2:hover {
+    
+    border: #aaaaaa solid 2px;
+    background-color: black;
+    color: white;
+}
+.button3{
+    /* display: absolute; */
+    
+    width: 127px;
+    font-size: 20px;
+    color: #000000;
+    background-color: #fff;
+    border: #000 2px solid ;
+    border-radius: 10px;
+}
+.button3:hover {
+    
+    border: #aaaaaa solid 2px;
+    background-color: black;
+    color: white;
+}
+
+.chart {
+    width : 700px;
+    height : 400px;
+    margin-left: 56px;
+    border : 1px solid #000000;
+    box-sizing: border-box;
+}
+
+
+.rightside{
+    flex : 1;
+    float: center;
+}
+.leftside {
+    margin-top: ;
+    flex : 1;
+    justify-content: center;
+    align-content: center;
+}
+.list{
+       
+}

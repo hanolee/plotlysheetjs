@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>입주사 목록</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="head">
+      <div class="titlebar">
+        <img
+          class="logo"
+          src="./images/logo.png"
+          alt="https://www.google.com/url?sa=i&url=https%3A%2F%2Finfodot.tistory.com%2F202&psig=AOvVaw0ogXpJaVq48aBEbyqjIErh&ust=1611907178826000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIjs66iUvu4CFQAAAAAdAAAAABAD"
+        />
+        <img class="typelogo" src="./images/typelogo.png" />
+        <input type="file" onchange="readExcel()" class="inputExcel">
+        <hr class="divideLine" />
+      </div>
+      
+    </div>
+    <div class="content">
+        <div class="leftside">
+            <div class="chart"></div>
+        </div>
+        <div class="rightside">
+            <div class="nav">
+                <button class="button1">All</button>
+                <button class="button2">Big</button>
+                <button class="button3">Small</button>
+            </div>
+            <hr class="divideLine2"/>
+            
+            <div class="list">
+                    
+            </div>
+            
+        </div>
+        
+    </div>
+
+
+    <!--Plotly, sheetJS CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.5/xlsx.full.min.js"></script>
+    <script
+      src="https://cdn.plot.ly/plotly-latest.min.js"
+      charset="utf-8"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
