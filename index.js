@@ -45,32 +45,36 @@ function getSkills() {
   console.log(newarray, ": get scores of skills!")
   return newarray;
 }
-
-async function resetTable (){
-
+function getSize(){
+  let newArray = [];
+  for(i=0;i<excelData.length;i++){
+    newarray.push(excelData[i].기술력 + excelData[i].협업가능성);
+  }
+  return newArray
 }
 
+//async function drawChart(){
+  var trace1 = {
+    x: getSkills(),
+    y: getCooperationScore(),
+    mode: 'markers',
+    marker: {
+      size: getSize()
+    },
+  };
+  
+  
+  var data = [trace1];
+  console.log(data, "차트 데이타");
+  var layout = {
+    title: 'Marker Size',
+    showlegend: false,
+    height: 360,
+    width: 650,
+  }
+  
+  
+  Plotly.plot("dreamChart", data, layout)
+//}
 
 
-var trace1 = {
-  x: [1, 2, 3, 4],
-  y: [10, 11, 12, 13],
-  mode: 'markers',
-  marker: {
-    size: [40, 60, 80, 100],
-  },
-}
-
-
-var data = [trace1]
-
-var layout = {
-  title: 'Marker Size',
-  showlegend: false,
-  height: 360,``
-  width: 650,
-}
-
-const chart = document.querySelector('.chart')
-
-Plotly.plot(chart, data, layout)
